@@ -1,0 +1,15 @@
+// Template: Home
+// ============================================================================
+
+
+.t-home {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.t-home__content {
+  @include media-query(1000px) {
+    margin: 0 auto;
+  }
+}
