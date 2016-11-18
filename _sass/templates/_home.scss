@@ -21,10 +21,10 @@
   padding-right: map-get($size-map, md);
   
 
-  max-width: 350px;
+  
 
   @include media-query(768px) {
-    
+  max-width: 350px;  
     &:nth-child(2n) {
       margin-left: map-get($size-map, lg);
     }
