@@ -6,10 +6,27 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+
 }
 
 .t-home__content {
   @include media-query(1000px) {
     margin: 0 auto;
+  }
+}
+
+.t-home__section {
+  width: 100%;
+  padding-left: map-get($size-map, md);
+  padding-right: map-get($size-map, md);
+  
+
+  max-width: 350px;
+
+  @include media-query(768px) {
+    
+    &:nth-child(2n) {
+      margin-left: map-get($size-map, lg);
+    }
   }
 }

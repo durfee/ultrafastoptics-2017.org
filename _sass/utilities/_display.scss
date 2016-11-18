@@ -23,7 +23,7 @@
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
     .u-width-#{$dimensions-name} {
-        width: $dimensions-value;
+        min-width: $dimensions-value;
     }
 }
 

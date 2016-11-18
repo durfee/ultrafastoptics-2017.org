@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: map-get($typeface-map, secondary);
+    font-family: map-get($typeface-map, primary);
     font-weight: map-get($type-weight-map, base);
     line-height: map-get($leading-map, tight);
 }
@@ -60,9 +60,12 @@ pre {
 
 a {
     outline: none;
+    letter-spacing: 0.5px;
+    padding: 2px 4px;
 
-    color: map-get($color-map, link);
-    text-decoration: underline;
+    color: map-get($color-map, primary);
+    background-color: map-get($color-map, secondary);
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -72,7 +75,8 @@ a {
     &:hover {
         // background-color: map-get($color-map, link);
 
-        color: map-get($color-map, white);
+        color: map-get($color-map, secondary);
+        background-color: map-get($color-map, primary);
         text-decoration: none;
     }
 }
