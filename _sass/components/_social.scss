@@ -1,0 +1,22 @@
+// Social/sponsor icon styles
+// ===
+
+
+.c-icon {
+  width: 32px;
+  height: 32px;
+  fill: map-get($color-map, primary);
+  background-color: transparent;
+
+  &:hover {
+    fill: transparentize((map-get($color-map, primary)), 0.5);    
+  }
+}
+
+.c-social-icon {
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+}

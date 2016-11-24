@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
 }
 
 .t-home__content {
@@ -17,16 +16,22 @@
 
 .t-home__section {
   width: 100%;
-  padding-left: map-get($size-map, md);
-  padding-right: map-get($size-map, md);
-  
-
-  
 
   @include media-query(768px) {
-  max-width: 350px;  
-    &:nth-child(2n) {
+    max-width: 368px;  
+
+    &:nth-child(2n-1) {
       margin-left: map-get($size-map, lg);
     }
   }
 }
+
+.t-home__section--large {
+  width: 100%;
+  max-width: 768px;
+}
+
+.t-home__topics-list {
+  list-style: disc;
+}
+

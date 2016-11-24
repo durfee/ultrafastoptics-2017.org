@@ -9,6 +9,15 @@
     }
 }
 
+.u-mobile-flexbox {
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(550px) {
+        flex-direction: row;
+    }
+}
+
 .u-flex-column {
     flex-direction: column;
 }
