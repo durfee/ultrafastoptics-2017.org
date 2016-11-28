@@ -61,11 +61,14 @@ pre {
 a {
     outline: none;
     letter-spacing: 0.5px;
-    padding: 2px 4px;
-
-    color: map-get($color-map, primary);
-    background-color: map-get($color-map, secondary);
+    // padding: 2px 4px;
+    
+    color: map-get($color-map, secondary);
     text-decoration: none;
+
+    border-bottom: 1px solid map-get($color-map, secondary);
+
+    transition: border 0.1s;
 
     &:hover,
     &:focus {
@@ -73,11 +76,9 @@ a {
     }
 
     &:hover {
-        // background-color: map-get($color-map, link);
-
         color: map-get($color-map, secondary);
-        background-color: map-get($color-map, primary);
         text-decoration: none;
+        border-bottom: 5px solid map-get($color-map, secondary);
     }
 }
 

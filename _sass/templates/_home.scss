@@ -21,7 +21,7 @@
   @include media-query(768px) {
     max-width: 368px;
     min-width: 368px;
-    flex: 0 0 368px;
+    flex: 0 0 368px; // Fixes safari flex flow bug
 
 
     &:nth-child(2n-1) {
