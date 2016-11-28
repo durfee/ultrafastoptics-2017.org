@@ -16,9 +16,13 @@
 
 .t-home__section {
   width: 100%;
+  flex-basis: 100%;
 
   @include media-query(768px) {
-    max-width: 368px;  
+    max-width: 368px;
+    min-width: 368px;
+    flex: 0 0 368px;
+
 
     &:nth-child(2n-1) {
       margin-left: map-get($size-map, lg);
@@ -29,6 +33,7 @@
 .t-home__section--large {
   width: 100%;
   max-width: 768px;
+  flex-basis: 100%;
 }
 
 .t-home__topics-list {
