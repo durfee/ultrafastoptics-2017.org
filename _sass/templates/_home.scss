@@ -18,7 +18,7 @@
   width: 100%;
   flex-basis: 100%;
 
-  @include media-query(768px) {
+  @include media-query(800px) {
     max-width: 368px;
     min-width: 368px;
     flex: 0 0 368px; // Fixes safari flex flow bug
